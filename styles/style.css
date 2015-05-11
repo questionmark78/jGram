@@ -1,0 +1,117 @@
+#instafeed{
+max-width: 100%;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+#instafeed img{
+display: block !important;
+float: left;
+}
+
+.columns_1 img{
+width: 100%;
+}
+
+#instafeed.columns_1 a img{
+clear: left;	
+}
+
+.columns_2 img{
+width: 50%;
+}
+
+#instafeed.columns_2 a:nth-child(3) img, #instafeed.columns_2 a:nth-child(5) img,
+#instafeed.columns_2 a:nth-child(7) img, #instafeed.columns_2 a:nth-child(9) img,
+#instafeed.columns_2 a:nth-child(11) img, #instafeed.columns_2 a:nth-child(13) img, 
+#instafeed.columns_2 a:nth-child(15) img, #instafeed.columns_2 a:nth-child(17) img, 
+#instafeed.columns_2 a:nth-child(19) img{
+clear: left;	
+}
+
+.columns_3 img{
+width: 33.3333%;
+}
+
+#instafeed.columns_3 a:nth-child(4) img, #instafeed.columns_3 a:nth-child(7) img,
+#instafeed.columns_3 a:nth-child(10) img, #instafeed.columns_3 a:nth-child(13) img,
+#instafeed.columns_3 a:nth-child(16) img, #instafeed.columns_3 a:nth-child(19) img{
+clear: left;	
+}
+
+.columns_4 img{
+width: 25%;
+}
+
+#instafeed.columns_4 a:nth-child(5) img, #instafeed.columns_4 a:nth-child(9) img,
+#instafeed.columns_4 a:nth-child(13) img, #instafeed.columns_4 a:nth-child(17) img{
+clear: left;	
+}
+
+#instafeed.false:hover{
+cursor: pointer;
+}
+
+.fancybox-inner{
+width: 500px !important;
+}
+
+.fancybox-inner img{
+width: 100%;
+}
+
+#instafeed.bubbles_on{
+border-radius: 100%;
+position: relative;
+border: 1px solid #000;
+width: 400px;
+height: 400px;
+}
+
+#instafeed.bubbles_on img{
+max-width: 100%;
+}
+
+#instafeed.bubbles_on .fancybox-buttons{
+display: block;
+border-radius: 100%;
+position: absolute;
+overflow: hidden;
+float: none;
+}
+
+@media (max-width: 600px){
+	.fancybox-inner{
+	width: 250px !important;
+	}
+
+	#instafeed.bubbles_on{
+	width: 300px;
+	height: 300px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

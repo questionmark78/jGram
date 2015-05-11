@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>JGram</name>
+    <author>Nicholas Eli</author>
+    <license>Nicholas By Design</license>
+    <version>1.0.0</version>
+    <description><![CDATA[ 
+        <img src="../modules/mod_jgram/assets/jgram.png" />
+        <p>Simple Instgram feed loader for Joomla!</p>
+        <p>Created by <a href="http://www.nicholasbydesign.com" target="_blank">Nicholas Eli | nicholasbydesign.com</a>.</p>
+    ]]></description>
+    <files>
+        <filename>mod_jgram.xml</filename>
+        <filename module="mod_jgram">mod_jgram.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>assets</folder>
+        <folder>tmpl</folder>
+        <folder>js</folder>
+        <folder>styles</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_jgram.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field name="warning" type="note" class="alert alert-error" label="Warning" description="Your access token should only be set to GET requests only, anything else could result in unwanted users accessing your Instagram account." />
+                <field name="set_up" type="note" label="Set Up"/>
+                <!-- array feeddisplay zero -->
+                <field name="get" type="groupedlist" default="tagged"
+                    label="MOD_INSTA_GET" description="MOD_INSTA_GET">
+                    <option value="tagged">Tagged</option>
+                    <option value="user">User</option>
+                </field>
+
+                <!-- array feed display one -->
+                <field name="tag_name" type="input" label="MOD_TAG_NAME" description="MOD_TAG_NAME_DESC" filter="safehtml" />
+                <!-- array feed display two -->
+                <field name="client_id" type="input" label="MOD_INSTA_CLIENT_ID" description="MOD_INSTA_CLIENT_ID_DESC" filter="safehtml" />
+                <!-- array feed display three -->
+                <field name="access_token" type="input" label="MOD_INSTA_ACCESS_TOKEN" description="MOD_INSTA_ACCESS_TOKEN_DESC" filter="safehtml" />
+                <!-- array feed display four -->
+                <field name="user_id" type="input" label="MOD_INSTA_USER_ID" description="MOD_INSTA_USER_ID_DESC" filter="safehtml" />
+                
+                <field name="display_title" type="note" label="Display Options"/>
+                <!-- array feed display five -->
+                <field name="limit" type="integer" default="10" label="MOD_INSTA_LIMIT" description="MOD_INSTA_LIMIT_DESC" first="1" last="20" step="1" />
+                <!-- array feed display six -->
+                <field name="columns" type="integer" default="3" label="MOD_INSTA_COLUMN" description="MOD_INSTA_COLUMN_DESC" first="0" last="4" step="1" />
+
+                <!-- array feed display eight -->
+                <field name="display" type="groupedlist" default="instagram-link"
+                    label="MOD_INSTA_LINKED" description="MOD_INSTA_LINKED_DEC">
+                    <option value="true">Instagram Link</option>
+                    <option value="false">Fancy Box</option>
+                </field>
+                
+                <field name="bubble_layout" type="note" label="Bubble Layout: Fancy Box must be on"/>
+                <!-- array feed display eight -->
+                <field name="bubbles" type="groupedlist" default="off"
+                    label="MOD_INSTA_BUBBLE" description="MOD_INSTA_BUBBLE_DESC">
+                    <option value="bubbles_off">Off</option>
+                    <option value="bubbles_on">On</option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
