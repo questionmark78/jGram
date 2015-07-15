@@ -1,14 +1,6 @@
 <?php 
 // No direct access
 defined('_JEXEC') or die; 
-/**
-* @version 1.0.0
-* @package jGram
-* @copyright (C) 2015 Nicholas By Design nicholasbydesign.com
-* @license GPL, http://www.gnu.org/copyleft/gpl.html
-*/
-
-
 
 ?>
 
@@ -19,8 +11,8 @@ defined('_JEXEC') or die;
 					." ". $params->get("access_token") 
 					." ". $params->get("user_id") 
 					." ". $params->get("limit")
-					." ". 'columns_' . $params->get("columns")  
-					." ". $params->get("resolution")
+					." ". 'columns_' . $params->get("columns")
+					." ". 'padding_' . $params->get("padding")   
 					." ". $params->get("display")
 					." ". $params->get("bubbles")
 					;?>">

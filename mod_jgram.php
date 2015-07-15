@@ -1,11 +1,15 @@
 <?php
 /**
-* @version 1.0.0
-* @package jGram
-* @copyright (C) 2015 Nicholas By Design nicholasbydesign.com
-* @license GPL, http://www.gnu.org/copyleft/gpl.html
-*/
-
+ * JGram Module Entry Point
+ * 
+ * @package    I got one
+ * @subpackage Modules
+ * @license    GNU/GPL, see LICENSE.php
+ * @link        JGram is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ */
  
  
 // No direct access
@@ -29,6 +33,10 @@ if($params->get("display") === "false"){
 }
 
 //add scripts
+if($params->get("jquery") === "yes"){
+$doc->addScript("modules/mod_jgram/js/jquery.js");
+}
+
 $doc->addScript("modules/mod_jgram/js/instafeed.js");
 $doc->addScript("modules/mod_jgram/js/feeddisplay.js");
 

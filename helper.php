@@ -1,14 +1,19 @@
-<?php defined('_JEXEC') or die('Restricted access');
+<?php
 /**
-* @version 1.0.0
-* @package jGram
-* @copyright (C) 2015 Nicholas By Design nicholasbydesign.com
-* @license GPL, http://www.gnu.org/copyleft/gpl.html
-*/
-
+ * Helper class for JGram module
+ * 
+ * @package    I got one
+ * @subpackage Modules
+ * @link nicholasbydesign.com
+ * @license        GNU/GPL, see LICENSE.php
+ * mod_jgram is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ */
 class ModJGramHelper{
     /**
-     *
+     * Retrieves the hello message
      *
      * @param   array  $params An object containing the module parameters
      *

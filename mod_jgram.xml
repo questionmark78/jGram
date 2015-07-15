@@ -2,7 +2,6 @@
 <extension type="module" version="3.1.0" client="site" method="upgrade">
     <name>JGram</name>
     <author>Nicholas Eli</author>
-    <license>Nicholas By Design</license>
     <version>1.0.0</version>
     <description><![CDATA[ 
         <img src="../modules/mod_jgram/assets/jgram.png" />
@@ -46,19 +45,30 @@
                 
                 <field name="display_title" type="note" label="Display Options"/>
                 <!-- array feed display five -->
-                <field name="limit" type="integer" default="10" label="MOD_INSTA_LIMIT" description="MOD_INSTA_LIMIT_DESC" first="1" last="20" step="1" />
+                <field name="limit" type="integer" default="10" label="MOD_INSTA_LIMIT" description="MOD_INSTA_LIMIT_DESC" first="1" last="32" step="1" />
                 <!-- array feed display six -->
                 <field name="columns" type="integer" default="3" label="MOD_INSTA_COLUMN" description="MOD_INSTA_COLUMN_DESC" first="0" last="4" step="1" />
 
+                <!-- array feed display seven -->
+                <field name="padding" type="integer" default="0" label="MOD_INSTA_PADDING" description="MOD_INSTA_PADDING_DESC" first="0" last="10" step="1" />
+
                 <!-- array feed display eight -->
                 <field name="display" type="groupedlist" default="instagram-link"
-                    label="MOD_INSTA_LINKED" description="MOD_INSTA_LINKED_DEC">
+                    label="MOD_INSTA_LINKED" description="MOD_INSTA_LINKED_DESC">
                     <option value="true">Instagram Link</option>
                     <option value="false">Fancy Box</option>
                 </field>
+
+                <!-- array feed display nine -->
+                <field name="load_jquery" type="note" label="Load jQuery"/>
+                <field name="jquery" type="groupedlist" default="Yes"
+                    label="MOD_INSTA_JQUERY" description="MOD_INSTA_JQUERY_DESC">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </field>
                 
                 <field name="bubble_layout" type="note" label="Bubble Layout: Fancy Box must be on"/>
-                <!-- array feed display eight -->
+                <!-- array feed display ten-->
                 <field name="bubbles" type="groupedlist" default="off"
                     label="MOD_INSTA_BUBBLE" description="MOD_INSTA_BUBBLE_DESC">
                     <option value="bubbles_off">Off</option>
@@ -68,4 +78,4 @@
             </fieldset>
         </fields>
     </config>
-</extension>
+</extension> 

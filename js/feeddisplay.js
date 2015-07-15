@@ -10,8 +10,13 @@ jQuery(document).ready(function($){
 
 	//fancybox
 	if($('#instafeed').hasClass('false')){
-		var fancyTemplate = '<a class="fancybox-buttons" data-fancybox-group="button" href="#"><img src="{{image}}" /></a>';
-		$("#instafeed img").fancybox();
+		var fancyTemplate = '<div class="fancybox-buttons" data-fancybox-group="button"><a href="#"><img src="{{image}}" /></a>' +
+		'<div class="details">' +
+		'<div><p>{{caption}}</p></div>' +
+		'<div><p>{{likes}}</p></div>' +
+		'</div>' +
+		'</div>';
+		$("#instafeed div").fancybox();
 	}
 
 	//bubble display
@@ -36,7 +41,7 @@ jQuery(document).ready(function($){
 				$(this).width(widthHeight);
 				$(this).height($(this).width());
 			});
-		});
+		}); 
 	}	
 	randomPos();
 
@@ -73,6 +78,6 @@ jQuery(document).ready(function($){
 	  template 		: fancyTemplate,
 	  resolution	: "standard_resolution"
 	});
-	feed.run();
+	feed.run(); 
 
 });
