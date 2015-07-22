@@ -34,7 +34,7 @@ if($params->get("display") === "false"){
 
 //add scripts
 if($params->get("jquery") === "yes"){
-$doc->addScript("modules/mod_jgram/js/jquery.js");
+	$doc->addScript("modules/mod_jgram/js/jquery.js");
 }
 
 $doc->addScript("modules/mod_jgram/js/instafeed.js");

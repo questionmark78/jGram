@@ -1,149 +1,112 @@
 #instafeed{
-max-width: 100%;
-width: 100%;
-height: auto;
-overflow: hidden;
+	webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
-#instafeed div{
-display: block !important;
-float: left;
+#instafeed *{
+	webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;	
+  	position: relative;
 }
 
 #instafeed img{
+	float: left;
+}
+
+/* define columns */
+[data-columns="1"] img{
 	width: 100%;
 }
 
-.columns_1 div{
-width: 100%;
+[data-columns="2"] img{
+	width: 50%;
 }
 
-#instafeed.columns_1 div{
-clear: left;	
+[data-columns="3"] img{
+	width: 33.33333%;
 }
 
-.columns_2 div{
-width: 50%;
+[data-columns="4"] img{
+	width: 25%;
 }
 
-#instafeed.columns_2 div:nth-child(3) div, #instafeed.columns_2 div:nth-child(5) div,
-#instafeed.columns_2 div:nth-child(7) div, #instafeed.columns_2 div:nth-child(9) div,
-#instafeed.columns_2 div:nth-child(11) div, #instafeed.columns_2 div:nth-child(13) div, 
-#instafeed.columns_2 div:nth-child(15) div, #instafeed.columns_2 div:nth-child(17) div, 
-#instafeed.columns_2 div:nth-child(19) div{
-clear: left;	
-}
-
-.columns_3 div{
-width: 33.3333%;
-}
-
-#instafeed.columns_3 div:nth-child(4) div, #instafeed.columns_3 div:nth-child(7) div,
-#instafeed.columns_3 div:nth-child(10) div, #instafeed.columns_3 div:nth-child(13) div,
-#instafeed.columns_3 div:nth-child(16) div, #instafeed.columns_3 div:nth-child(19) div{
-clear: left;	
-}
-
-.columns_4 div{
-width: 25%;
-}
-
-#instafeed.columns_4 div:nth-child(5) div, #instafeed.columns_4 div:nth-child(9) div,
-#instafeed.columns_4 div:nth-child(13) div, #instafeed.columns_4 div:nth-child(17) div{
-clear: left;	
-}
-
-#instafeed.padding_1 div{
+/* define padding */
+[data-padding="1"] img{
 	padding: 1px;
 }
 
-#instafeed.padding_2 div{
+[data-padding="2"] img{
 	padding: 2px;
 }
 
-#instafeed.padding_3 div{
+[data-padding="3"] img{
 	padding: 3px;
 }
 
-#instafeed.padding_4 div{
-	padding: 4px;
+[data-padding="4"] img{
+	padding: 2px;
 }
 
-#instafeed.padding_5 div{
+[data-padding="5"] img{
 	padding: 5px;
 }
 
-#instafeed.padding_6 div{
+[data-padding="6"] img{
 	padding: 6px;
 }
 
-#instafeed.padding_7 div{
+[data-padding="7"] img{
 	padding: 7px;
 }
 
-#instafeed.padding_8 div{
+[data-padding="8"] img{
 	padding: 8px;
 }
 
-#instafeed.padding_9 div{
+
+[data-padding="9"] img{
 	padding: 9px;
 }
 
-#instafeed.padding_10 div{
+[data-padding="10"] img{
 	padding: 10px;
 }
 
-#instafeed.false:hover{
-cursor: pointer;
-}
-
-.fancybox-inner{
-width: 500px !important;
-}
-
-.fancybox-inner img{
-width: 100%;
-}
-
-#instafeed.bubbles_on{
-border-radius: 100%;
-position: relative;
-width: 400px;
-height: 400px;
-}
-
-#instafeed.bubbles_on img{
-max-width: 100%;
-}
-
-#instafeed.bubbles_on .fancybox-buttons{
-display: block;
-border-radius: 100%;
-position: absolute;
-overflow: hidden;
-float: none;
+#instafeed .fancybox{
+	display: block !important;
 }
 
 #instafeed .details{
-	display: none !important;
+	display: none;
 }
 
-@media (max-width: 600px){
-	.fancybox-inner{
-	width: 250px !important;
-	}
-
-	#instafeed.bubbles_on{
-	width: 300px;
-	height: 300px;
-	}
+.fancybox-outer .caption, .fancybox-outer .likes{
+	width: 50%;
+	float: left;
 }
 
+.fancybox-outer .caption{
+	text-align: left;
+}
 
+.fancybox-outer .likes{
+	text-align: right;
+}
 
-
-
-
+.fancybox-outer .likes p{
+	width: 25px;
+	height: 25px;
+	float: right;
+	background-image: url('../assets/likes.png');
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	padding-right: 8px;
+	padding-top: 1px;
+	font-weight: bold;
+	color: #fff;
+}
 
 
 
