@@ -70,14 +70,4 @@
             </fieldset>
         </fields>
     </config>
-</extension> -- array feed display ten-->
-                <field name="bubbles" type="groupedlist" default="off"
-                    label="MOD_INSTA_BUBBLE" description="MOD_INSTA_BUBBLE_DESC">
-                    <option value="bubbles_off">Off</option>
-                    <option value="bubbles_on">On</option>
-                </field>
-
-            </fieldset>
-        </fields>
-    </config>
 </extension> 
