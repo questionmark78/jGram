@@ -96,16 +96,18 @@
 }
 
 .fancybox-outer .likes p{
-	width: 25px;
-	height: 25px;
-	float: right;
-	background-image: url('../assets/likes.png');
-	background-size: 25px 25px;
-	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline;
 	padding-right: 8px;
 	padding-top: 1px;
-	font-weight: bold;
-	color: #fff;
+	vertical-align: text-bottom;
+}
+
+.fancybox-outer .likes img{
+	width: 20px;
+  	height: 20px;
+  	vertical-align: text-bottom;
 }
 
 

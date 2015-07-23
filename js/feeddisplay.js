@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 		var fancyTemplate = '<div class="fancybox" data-fancybox-group="button"><a href="#"><img src="{{image}}" /></a>' +
 		'<div class="details">' +
 		'<div class="caption"><p>{{caption}}</p></div>' +
-		'<div class="likes"><p>{{likes}}</p></div>' +
+		'<div class="likes"><p>{{likes}} likes</p><img src="modules/mod_jgram/assets/likes.png" /></div>' +
 		'</div>' +
 		'</div>';
 		$("#instafeed div").fancybox();
