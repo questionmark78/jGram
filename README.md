@@ -5,7 +5,7 @@ What you will need:
 
 - Client ID, you can get it here https://instagram.com/developer/clients/manage/ . You may have to register a new client.
 
-- Access Token & User ID, you can find it here http://instafeedjs.com/#access_token=214049647.467ede5.0adc1ddea609491fbec37dc05c46c6a4
+- Access Token & User ID, you can find it here http://instagram.pixelunion.net/
 
 How To Use:
 
