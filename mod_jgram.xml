@@ -32,6 +32,7 @@
                     label="USER OR HASHTAG" description="Display user photos or a hastag">
                     <option value="tagged">Tagged</option>
                     <option value="user">User</option>
+                    <option value="search">Search</option>
                 </field>
 
                 <!-- array feed display one -->
@@ -45,23 +46,23 @@
                 
                 <field name="display_title" type="note" label="Display Options"/>
                 <!-- array feed display five -->
-                <field name="limit" type="integer" default="10" label="PHOTO LIMIT" description="Specifiy how many photos to display" first="1" last="32" step="1" />
+                <field name="limit" type="integer" default="10" label="PHOTO LIMIT" description="Specifiy how many photos to display" first="1" last="20" step="1" />
                 <!-- array feed display six -->
-                <field name="columns" type="integer" default="3" label="COLUMNS" description="How many columns should display" first="0" last="4" step="1" />
+                <field name="columns" type="integer" default="3" label="COLUMNS" description="How many columns should display" first="0" last="12" step="1" />
 
                 <!-- array feed display seven -->
                 <field name="padding" type="integer" default="0" label="PADDING" description="Set space between photos" first="0" last="10" step="1" />
-
+                
                 <!-- array feed display eight -->
-                <field name="display" type="groupedlist" default="instagram-link"
-                    label="INSTAGRAM OR FANCY BOX" description="Select to link photos to Instagram or Fancy Box">
-                    <option value="true">Instagram Link</option>
-                    <option value="false">Fancy Box</option>
+                <field name="profile_display" type="groupedlist" default="no"
+                    label="HIDE USER PROFILE" description="This hides the user profile">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </field>
 
                 <!-- array feed display nine -->
                 <field name="load_jquery" type="note" label="Load jQuery"/>
-                <field name="jquery" type="groupedlist" default="Yes"
+                <field name="jquery" type="groupedlist" default="no"
                     label="Load JQUERY" description="This module is jQuery dependent, you may need to turn this on or off">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>

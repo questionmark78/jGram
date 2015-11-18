@@ -1,22 +1,21 @@
 # jGram
 Instagram module for Joomla! 
 
+What you will need:
+
+- Client ID, you can get it here https://instagram.com/developer/clients/manage/ . You may have to register a new client.
+
+- Access Token & User ID, you can find it here http://instafeedjs.com/#access_token=214049647.467ede5.0adc1ddea609491fbec37dc05c46c6a4
+
 How To Use:
 
-- Select Type Of Media (tagged or user).
-
-- If tagged enter the tagname without "#", else leave this field blank.
-
-- Enter Instagram client ID (found here: https://instagram.com/developer/clients/manage/).
-
-- Enter Instagram user ID (found here: https://instagram.com/oauth/authorize/?client_id=467ede5a6b9b48ae8e03f4e2582aeeb3&redirect_uri=http://instafeedjs.com&response_type=token).
-
-- Enter Instagram access Token (found here: https://instagram.com/oauth/authorize/?client_id=467ede5a6b9b48ae8e03f4e2582aeeb3&redirect_uri=http://instafeedjs.com&response_type=token).
+- Select Type Of Media (tagged, user or search).
+  (if tagged simply enter the tag without the "#")
 
 - Select amount of photos to display
 
-- Select link to Instagram or Fancybox pop up.
+- Select amount of columns and space between them.
 
-- Bubble mode removed, lets be honest... it was stupid.  Also probably should of resided in its own template file not lumped in with default template.
+- If you have selected "User" you can choose to display or hide the user profile
 
-You are free to use this app for personal use and non commercial usage. Because Fancybox requries payment and domain registration to use for commercial use, this disclaimer must be added.  You can pay it directly to Fancybox here (http://fancybox.net/) or for a small additional fee you can contact me at (nick@nicholasbydesign.com) and I will handle the payments for you as well as any support questions you may have. 
+- If there are any issues with the feed displaying you may need to load jQuery.
