@@ -4,8 +4,8 @@ Instagram module for Joomla!
 What you will need:
 
 - Client ID, you can get it here https://instagram.com/developer/clients/manage/ . You may have to register a new client.
-
-- Access Token & User ID, you can find it here http://instagram.pixelunion.net/
+- Access Token, you can find it here http://instagram.pixelunion.net/
+- User ID, you can find it here http://jelled.com/instagram/lookup-user-id
 
 How To Use:
 
