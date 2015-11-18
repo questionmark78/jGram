@@ -1,6 +1,9 @@
 # jGram
 Instagram module for Joomla! 
 
+Demo
+ - http://nicholasbydesign.com/jGram/
+
 What you will need:
 
 - Client ID, you can get it here https://instagram.com/developer/clients/manage/ . You may have to register a new client.
