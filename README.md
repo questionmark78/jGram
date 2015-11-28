@@ -1,16 +1,19 @@
 # jGram
 Instagram module for Joomla! 
 
-Demo
+#Install Notes
+This was intended for Joomla! 3.0 and higher but will work on 2.5 .  If you have entered in your Client ID, Access Token and User ID but still do no see your feed. You may have to switch "Load jQuery" to "Yes", if your feed still does not display, adjusting Display Options, Padding and Photo Limit. 
+
+#Demo
  - http://nicholasbydesign.com/jGram/
 
-What you will need:
+#What you will need:
 
 - Client ID, you can get it here https://instagram.com/developer/clients/manage/ . You may have to register a new client.
 - Access Token, you can find it here http://instagram.pixelunion.net/
 - User ID, you can find it here http://jelled.com/instagram/lookup-user-id
 
-How To Use:
+#How To Use:
 
 - Select Type Of Media (tagged, user or search).
   (if tagged simply enter the tag without the "#")
