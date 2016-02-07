@@ -90,7 +90,7 @@ jQuery(document).ready(function($){
 			$('.user-info .website').text(data.data.website);
 			$('.user-info .website').attr('href', data.data.website);
 			$('.user-info .posts').html('<strong>' + data.data.counts.media + '</strong>' + ' Posts');
-			$('.user-info .followers').html('<strong>' + data.data.counts.followed_by + '</strong>'  + ' Follwers');
+			$('.user-info .followers').html('<strong>' + data.data.counts.followed_by + '</strong>'  + ' Followers');
 			$('.user-info .following').html('<strong>' + data.data.counts.follows + '</strong>'  + ' Following');
 		  }
 		});
